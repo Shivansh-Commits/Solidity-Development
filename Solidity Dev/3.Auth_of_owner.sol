@@ -15,7 +15,7 @@ contract ownerAuthentication
 
     function withdrawAllMoney(address payable _to)public
     {   
-        require(msg.sender==owner,"YOU ARE NOT THE OWNER");    //conditional statement updated from lappy
+        require(msg.sender==owner,"YOU ARE NOT THE OWNER");    //conditional statement
         _to.transfer(address(this).balance);
     }
 }
